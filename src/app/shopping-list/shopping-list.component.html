@@ -5,7 +5,15 @@
     
             </app-shopping-edit>
             <hr>
-            <p>The shopping list</p>
+            <ul class="list-group">
+                <a
+                    class="list-group-item" 
+                    style="cursor: pointer"
+                    *ngFor="let ingred of ingredients"
+                    >
+                    {{ ingred.name}} ({{ingred.amount}})
+                </a>
+            </ul>
         </div>
     </div>
 </div>
